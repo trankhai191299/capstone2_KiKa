@@ -1,0 +1,30 @@
+// font size
+$text-sm: 16px;
+$text-base: 20px;
+$text-md: 24px;
+$text-l:30px;
+$text-lg: 40px;
+// font weight
+$text-light:300;
+$text-medium:400;
+$text-bold:700;
+// text color
+$text-cl-ghost: #CBC9C9;
+$text-cl-a: #ff0000;
+$text-cl-prim:#000;
+$text-cl-sec:#fff;
+// background color
+$bg-cl-sp1:#000;
+$bg-cl-sp2:#DEDDDC;
+$bg-cl-sp3:#fff;
+// button bg color
+$btn-cl-1:#E1B067;
+$btn-cl-2:#DEDDDC;
+
+//------------------
+@mixin text($fs:$text-base,$fw:$text-light,$c:$text-cl-prim) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+}
+//------------------

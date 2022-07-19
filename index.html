@@ -33,7 +33,9 @@
           class="container d-flex align-items-center justify-content-between"
         >
           <div class="logo">
-            <img src="/img/image 3.png" alt="..." />
+            <a href="/index.html">
+              <img src="/img/image 3.png" alt="..." />
+            </a>
           </div>
           <div class="user-section">
             <a href="#" class="cart d-inline-block">
@@ -42,7 +44,7 @@
             </a>
             <span class="button-area">
               <a href="#" class="btn ms-2 me-3">Login</a>
-              <a href="#" class="btn">Register</a>
+              <a href="/register.html" class="btn">Register</a>
             </span>
           </div>
         </div>
@@ -60,26 +62,82 @@
       </div>
     </header>
     <!-- Carousel -->
-    <div class="carousel">
+    <div class="carousel slide" id="carouselControls" data-bs-ride="carousel" data-bs-interval="2500">
       <div class="container">
-        <div class="carousel-content">
-          <div class="row align-items-center">
-            <div class="col-8">
-              <div class="carousel-left">
-                <img src="/img/image 4.png" alt="..." class="img-fluid" />
+        <div class="carousel-inner">
+          <div class="carousel-content carousel-item active">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <div class="carousel-left">
+                  <img src="/img/image 4.png" alt="..." class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="carousel-right">
+                  <div class="shoe-info">
+                    <h3 class="shoe-name">Product Name</h3>
+                    <p class="shoe-description">Product description ....</p>
+                    <button class="btnBuy">Buy Now</button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-4">
-              <div class="carousel-right">
-                <div class="shoe-info">
-                  <h3 class="shoe-name">Product Name</h3>
-                  <p class="shoe-description">Product description ....</p>
-                  <button class="btnBuy">Buy Now</button>
+          </div>
+          <div class="carousel-content carousel-item">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <div class="carousel-left">
+                  <img src="/img/image 4.png" alt="..." class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="carousel-right">
+                  <div class="shoe-info">
+                    <h3 class="shoe-name">Product Name</h3>
+                    <p class="shoe-description">Product description ....</p>
+                    <button class="btnBuy">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-content carousel-item">
+            <div class="row align-items-center">
+              <div class="col-8">
+                <div class="carousel-left">
+                  <img src="/img/image 4.png" alt="..." class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="carousel-right">
+                  <div class="shoe-info">
+                    <h3 class="shoe-name">Product Name</h3>
+                    <p class="shoe-description">Product description ....</p>
+                    <button class="btnBuy">Buy Now</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
     <!-- Product Feature -->
@@ -97,7 +155,7 @@
                   src="/img/image 5.png"
                   alt="..."
                 />
-              </div>  
+              </div>
               <div class="card-body">
                 <h4 class="card-title product-name">Adidas Prophere</h4>
                 <p class="card-text product-descript">short descript ...</p>
@@ -118,7 +176,7 @@
                   src="/img/image 5.png"
                   alt="..."
                 />
-              </div>  
+              </div>
               <div class="card-body">
                 <h4 class="card-title product-name">Adidas Prophere</h4>
                 <p class="card-text product-descript">short descript ...</p>
@@ -139,7 +197,7 @@
                   src="/img/image 5.png"
                   alt="..."
                 />
-              </div>  
+              </div>
               <div class="card-body">
                 <h4 class="card-title product-name">Adidas Prophere</h4>
                 <p class="card-text product-descript">short descript ...</p>
@@ -160,7 +218,7 @@
                   src="/img/image 5.png"
                   alt="..."
                 />
-              </div>  
+              </div>
               <div class="card-body">
                 <h4 class="card-title product-name">Adidas Prophere</h4>
                 <p class="card-text product-descript">short descript ...</p>
@@ -181,7 +239,7 @@
                   src="/img/image 5.png"
                   alt="..."
                 />
-              </div>  
+              </div>
               <div class="card-body">
                 <h4 class="card-title product-name">Adidas Prophere</h4>
                 <p class="card-text product-descript">short descript ...</p>
@@ -202,7 +260,7 @@
                   src="/img/image 5.png"
                   alt="..."
                 />
-              </div>  
+              </div>
               <div class="card-body">
                 <h4 class="card-title product-name">Adidas Prophere</h4>
                 <p class="card-text product-descript">short descript ...</p>
@@ -219,9 +277,92 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        
+    <footer class="footer mt-5 pt-5">
+      <div class="line line-1">
+        <div class="container">
+          <div class="row row-1">
+            <div class="col-4">
+              <div class="footer-content">
+                <div class="title">
+                  <h4 class="text-uppercase">get help</h4>
+                </div>
+                <div class="info d-flex flex-column">
+                  <a href="#">Contact us</a>
+                  <a href="#">Shopping</a>
+                  <a href="#">NIKEiD</a>
+                  <a href="#">Nike +</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="footer-content">
+                <div class="title">
+                  <h4 class="text-uppercase">orders</h4>
+                </div>
+                <div class="info d-flex flex-column">
+                  <a href="#">Payment options</a>
+                  <a href="#">Shipping and delivery</a>
+                  <a href="#">Returns</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="footer-content">
+                <div class="title">
+                  <h4 class="text-uppercase">register</h4>
+                </div>
+                <div class="info">
+                  <p>
+                    Create one account to manage everythingyou do with Nike,
+                    form your shopping preferences to your Nike+ activity
+                  </p>
+                  <a href="#" class="other-link">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line line-2">
+        <div class="container">
+          <div class="row row-2">
+            <div class="col-4">
+              <div class="footer-content">
+                <div class="title">
+                  <h4 class="text-uppercase">email sign up</h4>
+                </div>
+                <div class="info">
+                  <p>
+                    Be the first to know about new products and special offers
+                  </p>
+                  <a href="#" class="other-link">Sign up now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="footer-content">
+                <div class="title">
+                  <h4 class="text-uppercase">gift cards</h4>
+                </div>
+                <div class="info">
+                  <p>Give the gift that always fits</p>
+                  <a href="#" class="other-link">View cards</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="footer-content">
+                <div class="title">
+                  <h4 class="text-uppercase">stores near you</h4>
+                </div>
+                <div class="info">
+                  <p>Locate a Nike retail store or authorized retailer</p>
+                  <a href="#" class="other-link">Search</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->

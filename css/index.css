@@ -10,7 +10,6 @@ a {
   text-decoration: none;
 }
 
-/**----------------------------------------------**/
 .header {
   padding-top: 15px;
   background-color: #000;
@@ -62,6 +61,42 @@ a {
   opacity: 1;
 }
 
+.footer .line .row .col-4 .title h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+.footer .line .row .col-4 .info a,
+.footer .line .row .col-4 .info p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.footer .line .row .col-4 .info a {
+  transition: all 0.5s;
+}
+.footer .line .row .col-4 .info a:hover {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ff0000;
+}
+.footer .line .row .col-4 .info a.other-link {
+  font-size: 16px;
+  font-weight: 300;
+  color: #de8b87;
+}
+.footer .line .row .col-4 .info a.other-link:hover {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ff0000;
+}
+.footer .line.line-2 {
+  padding: 30px 0;
+  margin-top: 30px;
+  background-color: #DEDDDC;
+}
+
+/**----------------------------------------------**/
 .carousel {
   background-image: url("/img/image 6.png");
   background-position: bottom;
@@ -70,17 +105,17 @@ a {
   padding-top: 25px;
   height: 450px;
 }
-.carousel .carousel-right .shoe-info .shoe-name {
+.carousel .carousel-inner .carousel-item .carousel-right .shoe-info .shoe-name {
   font-size: 40px;
   font-weight: 300;
   color: #000;
 }
-.carousel .carousel-right .shoe-info .shoe-description {
+.carousel .carousel-inner .carousel-item .carousel-right .shoe-info .shoe-description {
   font-size: 20px;
   font-weight: 300;
   color: #000;
 }
-.carousel .carousel-right .shoe-info .btnBuy {
+.carousel .carousel-inner .carousel-item .carousel-right .shoe-info .btnBuy {
   transition: all 0.5s;
   background: #E1B067;
   padding: 15px 25px;
@@ -89,9 +124,15 @@ a {
   font-weight: 300;
   color: #fff;
 }
-.carousel .carousel-right .shoe-info .btnBuy:hover {
+.carousel .carousel-inner .carousel-item .carousel-right .shoe-info .btnBuy:hover {
   background: #DEDDDC;
   color: #ff0000;
+}
+.carousel button .carousel-control-next-icon {
+  background-image: url("/img/right-arrow.png");
+}
+.carousel button .carousel-control-prev-icon {
+  background-image: url("/img/left-arrow.png");
 }
 
 .product-feature {

@@ -3,25 +3,68 @@
 @import "./header";
 @import "./footer";
 //------------------------------------
-.register{
-    h3{
-        @include text($text-lg,$text-medium,$text-cl-prim);
-    }
-    form{
-        position: relative;
-        .row{
-            .form-items{
-                input{
-
+.register {
+    padding-bottom: 100px;
+  h3 {
+    @include text($text-lg, $text-medium, $text-cl-prim);
+  }
+  form {
+    position: relative;
+    .row {
+      .form-items {
+        input {
+          &.form-control {
+            border-bottom: 5px solid $bd-cl-1;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+            padding: 15px 15px 15px 0;
+            @include text($text-l,$text-medium,$text-cl-prim);
+            &:focus {
+              box-shadow: none;
+            }
+          }
+          &::placeholder{
+            @include text($text-l,$text-medium,$text-cl-prim);
+            opacity: .5;
+          }
+        }
+        .gender-choice-title{
+            @include text($text-l, $text-medium, $text-cl-prim);
+        }
+        .form-check{
+            .form-check-input{
+                width: 65px;
+                height: 50px;
+                border: none;
+                transform: translate(-15px,-10px);
+                background-color: $fr-cl-check1;
+                &:focus{
+                    box-shadow: none;
                 }
             }
+            .form-check-label{
+                @include text($text-l, $text-medium, $text-cl-prim);
+            }
         }
-        button{
-            transition: all .5s;
-            margin-top: 25px;
-            position: absolute;
-            left: 51.5%;
-            @include button($btn-cl-4,5px 60px,none,$text-l,$text-medium,$text-cl-sec,$btn-cl-1,$text-cl-a)
-        }
+      }
     }
+    button {
+      transition: all 0.5s;
+      margin-top: 25px;
+      position: absolute;
+      left: 51.5%;
+      @include button(
+        $btn-cl-4,
+        5px 60px,
+        none,
+        $text-l,
+        $text-medium,
+        $text-cl-sec,
+        $btn-cl-1,
+        $text-cl-a
+      );
+    }
+  }
 }

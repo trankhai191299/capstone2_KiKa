@@ -27,6 +27,8 @@ $btn-cl-3:#fff;
 $btn-cl-4:#AE18E2;
 //bordercolor
 $bd-cl-1:#AE18E2;
+//form check color
+$fr-cl-check1:#D9D9D9;
 //------------------
 @mixin text($fs:$text-base,$fw:$text-light,$c:$text-cl-prim) {
     font-size: $fs;

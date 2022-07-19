@@ -81,10 +81,10 @@ a {
   color: #000;
 }
 .carousel .carousel-right .shoe-info .btnBuy {
+  transition: all 0.5s;
   background: #E1B067;
   padding: 15px 25px;
   border: none;
-  border-radius: 10px;
   font-size: 20px;
   font-weight: 300;
   color: #fff;
@@ -92,4 +92,52 @@ a {
 .carousel .carousel-right .shoe-info .btnBuy:hover {
   background: #DEDDDC;
   color: #ff0000;
+}
+
+.product-feature {
+  padding-top: 25px;
+}
+.product-feature .row {
+  margin-top: 50px;
+}
+.product-feature .row .col-4 .card {
+  background-color: #F8F8F8;
+}
+.product-feature .row .col-4 .card .card-top {
+  padding: 20px;
+}
+.product-feature .row .col-4 .card .card-body {
+  padding: 20px;
+}
+.product-feature .row .col-4 .card .card-body .card-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+.product-feature .row .col-4 .card .card-body .card-text {
+  font-size: 20px;
+  font-weight: 300;
+  color: #CBC9C9;
+}
+.product-feature .row .col-4 .card .card-footer {
+  padding: 0;
+  background-color: #DEDDDC;
+}
+.product-feature .row .col-4 .card .card-footer .btnBuy {
+  transition: all 0.5s;
+  background: #E1B067;
+  padding: 15px 25px;
+  border: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+.product-feature .row .col-4 .card .card-footer .btnBuy:hover {
+  background: #DEDDDC;
+  color: #ff0000;
+}
+.product-feature .row .col-4 .card .card-footer .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
 }

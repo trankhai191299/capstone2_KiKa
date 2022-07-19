@@ -17,6 +17,7 @@ $text-cl-sec:#fff;
 $bg-cl-sp1:#000;
 $bg-cl-sp2:#DEDDDC;
 $bg-cl-sp3:#fff;
+$bg-cl-sp4:#F8F8F8;
 // button bg color
 $btn-cl-1:#E1B067;
 $btn-cl-2:#DEDDDC;
@@ -31,7 +32,6 @@ $btn-cl-2:#DEDDDC;
     background: $bg;
     padding: $pd;
     border: $bd;
-    border-radius: 10px;
     font-size: $fs;
     font-weight: $fw;
     color: $c;

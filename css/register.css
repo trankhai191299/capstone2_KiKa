@@ -95,3 +95,28 @@ a {
   margin-top: 30px;
   background-color: #DEDDDC;
 }
+
+.register h3 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+}
+.register form {
+  position: relative;
+}
+.register form button {
+  transition: all 0.5s;
+  margin-top: 25px;
+  position: absolute;
+  left: 51.5%;
+  background: #AE18E2;
+  padding: 5px 60px;
+  border: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+.register form button:hover {
+  background: #E1B067;
+  color: #ff0000;
+}

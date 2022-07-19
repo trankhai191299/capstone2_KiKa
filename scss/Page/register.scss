@@ -3,3 +3,25 @@
 @import "./header";
 @import "./footer";
 //------------------------------------
+.register{
+    h3{
+        @include text($text-lg,$text-medium,$text-cl-prim);
+    }
+    form{
+        position: relative;
+        .row{
+            .form-items{
+                input{
+
+                }
+            }
+        }
+        button{
+            transition: all .5s;
+            margin-top: 25px;
+            position: absolute;
+            left: 51.5%;
+            @include button($btn-cl-4,5px 60px,none,$text-l,$text-medium,$text-cl-sec,$btn-cl-1,$text-cl-a)
+        }
+    }
+}

@@ -61,3 +61,35 @@ a {
   border-bottom: 1px solid #000;
   opacity: 1;
 }
+
+.carousel {
+  background-image: url("/img/image 6.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 25px;
+  height: 450px;
+}
+.carousel .carousel-right .shoe-info .shoe-name {
+  font-size: 40px;
+  font-weight: 300;
+  color: #000;
+}
+.carousel .carousel-right .shoe-info .shoe-description {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+}
+.carousel .carousel-right .shoe-info .btnBuy {
+  background: #E1B067;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+.carousel .carousel-right .shoe-info .btnBuy:hover {
+  background: #DEDDDC;
+  color: #ff0000;
+}

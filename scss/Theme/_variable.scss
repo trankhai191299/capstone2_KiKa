@@ -27,4 +27,18 @@ $btn-cl-2:#DEDDDC;
     font-weight: $fw;
     color: $c;
 }
+@mixin button($bg,$pd,$bd,$fs,$fw,$c,$bg-hover,$c-hover){
+    background: $bg;
+    padding: $pd;
+    border: $bd;
+    border-radius: 10px;
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    &:hover{
+        background: $bg-hover;
+        color: $c-hover;
+        
+    }
+}
 //------------------

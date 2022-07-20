@@ -43,6 +43,9 @@
                 &:focus{
                     box-shadow: none;
                 }
+                &:checked[type=radio]{
+                  background-image: url("/img/purple-dot.png");
+                }
             }
             .form-check-label{
                 @include text($text-l, $text-medium, $text-cl-prim);

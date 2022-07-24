@@ -1,21 +1,21 @@
-//1. Get all product
-function getAllShoe() {
+//Get feature product
+function getFeatureShoe() {
     let promise = axios({
         url:'https://shop.cyberlearn.vn/api/Product',
         method: 'GET',
     })
     promise.then((result)=>{
         // console.log(result.data)
-        renderShoe(result.data.content,"productFeatureTbl")
+        renderFeatureShoe(result.data.content,"productFeatureTbl")
     })
     promise.catch((e)=>{
         console.log(e)
     })
 }
-//2. Show data
-function renderShoe(arrSP,idBody){
+//Show feature shoe data
+function renderFeatureShoe(arrSP,idBody){
     let html = ""
-    for (let i in arrSP){
+    for (let i in arrSP.slice(0,6)){
         let shoe = arrSP[i]
         let{id,name,price,shortDescription,image} = shoe
         html += `
@@ -46,4 +46,8 @@ function renderShoe(arrSP,idBody){
     }
     document.getElementById(idBody).innerHTML = html
 }
-getAllShoe()
+
+//------------------------------------------------
+window.onload = () => {
+  getFeatureShoe()
+} 

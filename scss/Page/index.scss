@@ -55,10 +55,14 @@
         background-color: $bg-cl-sp4;
         .card-top {
           padding: 20px;
+          img{
+            height: 250px;
+          }
         }
         .card-body {
           padding: 20px;
           .card-title {
+            height: 60px;
             @include text($text-md, $text-medium, $text-cl-prim);
           }
           .card-text {

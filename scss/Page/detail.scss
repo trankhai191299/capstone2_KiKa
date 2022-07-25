@@ -15,6 +15,7 @@
           .card-body {
             padding: 20px;
             .card-title {
+              height: 60px;
               @include text($text-md, $text-medium, $text-cl-prim);
             }
             .card-text {

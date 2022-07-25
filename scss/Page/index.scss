@@ -9,9 +9,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 25px;
-  height: 450px;
-  .carousel-inner{
-    .carousel-item{
+  height: 600px;
+  .carousel-content{
+    .slick-item{
       .carousel-right {
         .shoe-info {
           .shoe-name {
@@ -20,7 +20,7 @@
           .shoe-description {
             @include text($text-base, $text-light, $text-cl-prim);
           }
-          .btnBuy {
+          a.btnBuy {
             transition: all 0.5s;
             @include button(
               $btn-cl-1,
@@ -35,14 +35,6 @@
           }
         }
       }
-    }
-  }
-  button{
-    .carousel-control-next-icon{
-      background-image: url("/img/right-arrow.png");
-    }
-    .carousel-control-prev-icon{
-      background-image: url("/img/left-arrow.png");
     }
   }
 }

@@ -104,19 +104,19 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 25px;
-  height: 450px;
+  height: 600px;
 }
-.carousel .carousel-inner .carousel-item .carousel-right .shoe-info .shoe-name {
+.carousel .carousel-content .slick-item .carousel-right .shoe-info .shoe-name {
   font-size: 40px;
   font-weight: 300;
   color: #000;
 }
-.carousel .carousel-inner .carousel-item .carousel-right .shoe-info .shoe-description {
+.carousel .carousel-content .slick-item .carousel-right .shoe-info .shoe-description {
   font-size: 20px;
   font-weight: 300;
   color: #000;
 }
-.carousel .carousel-inner .carousel-item .carousel-right .shoe-info .btnBuy {
+.carousel .carousel-content .slick-item .carousel-right .shoe-info a.btnBuy {
   transition: all 0.5s;
   background: #E1B067;
   padding: 15px 25px;
@@ -125,15 +125,9 @@ a {
   font-weight: 300;
   color: #fff;
 }
-.carousel .carousel-inner .carousel-item .carousel-right .shoe-info .btnBuy:hover {
+.carousel .carousel-content .slick-item .carousel-right .shoe-info a.btnBuy:hover {
   background: #DEDDDC;
   color: #ff0000;
-}
-.carousel button .carousel-control-next-icon {
-  background-image: url("/img/right-arrow.png");
-}
-.carousel button .carousel-control-prev-icon {
-  background-image: url("/img/left-arrow.png");
 }
 
 .product-feature {

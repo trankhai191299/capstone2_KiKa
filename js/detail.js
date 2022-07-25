@@ -32,22 +32,22 @@ function renderDetail(arrSP, idBody) {
   //   console.log(sizes);
   let html = `
     <div class="row" id="${id}">
-          <div class="col-4 ps-5 pt-5">
+          <div class="col-lg-4 col-md-12  pt-5">
             <img class="bg-light w-100" src=${image} alt="" />
           </div>
-          <div class="col-6 p-5">
+          <div class="col-lg-6 col-md-12 p-5">
             <h3>${name}</h3>
             <p>${description}</p>
             <span style="display: block" class="mb-2 text-success fw-bold"
               >Available size</span
             >
-            <button class="me-2 ps-1 pe-1">${size[0]}</button>
-            <button class="me-2 ps-1 pe-1">${size[1]}</button>
-            <button class="me-2 ps-1 pe-1">${size[2]}</button>
-            <button class="me-2 ps-1 pe-1">${size[3]}</button>
-            <button class="me-2 ps-1 pe-1">${size[4]}</button>
-            <button class="me-2 ps-1 pe-1">${size[5]}</button>
-            <button class="me-2 ps-1 pe-1">${size[6]}</button>
+            <button class="me-2 ps-1 pe-1 mt-2">${size[0]}</button>
+            <button class="me-2 ps-1 pe-1 mt-2">${size[1]}</button>
+            <button class="me-2 ps-1 pe-1 mt-2">${size[2]}</button>
+            <button class="me-2 ps-1 pe-1 mt-2">${size[3]}</button>
+            <button class="me-2 ps-1 pe-1 mt-2">${size[4]}</button>
+            <button class="me-2 ps-1 pe-1 mt-2">${size[5]}</button>
+            <button class="me-2 ps-1 pe-1 mt-2">${size[6]}</button>
             <span style="display: block" class="mt-2 mb-2 text-danger fw-bold"
               >${price}$</span
             >
@@ -91,7 +91,7 @@ function renderRelateProduct(arrRelatedProducts, idBody) {
     let shoe = arrRelatedProducts[i];
     let { id, name, price, shortDescription, image } = shoe;
     html += `
-        <div class="col-4">
+        <div class="col-lg-4 col-sm-6 col-12">
         <div class="card text-start m-3">
           <div class="card-top">
             <img

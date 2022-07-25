@@ -34,7 +34,7 @@ function renderFeatureShoe(arrSP,idBody){
         let shoe = featureArr[i]
         let{id,name,price,shortDescription,image} = shoe
         html += `
-        <div class="col-4">
+        <div class="col-lg-4 col-sm-6 col-12">
         <div class="card text-start m-3">
           <div class="card-top">
             <img

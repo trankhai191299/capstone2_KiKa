@@ -28,9 +28,10 @@ async function getCarouselShoe(){
 }
 //Show feature shoe data
 function renderFeatureShoe(arrSP,idBody){
-    let html = ""
-    for (let i in arrSP.slice(0,6)){
-        let shoe = arrSP[i]
+    let html = "";
+    let featureArr = randomItem(arrSP,6);
+    for (let i in featureArr){
+        let shoe = featureArr[i]
         let{id,name,price,shortDescription,image} = shoe
         html += `
         <div class="col-4">
@@ -62,9 +63,10 @@ function renderFeatureShoe(arrSP,idBody){
 }
 //Show carousel shoe data
 function renderCarouselShoe(arrSP,idBody){
-  let html = ""
-  for (let i in arrSP.slice(0,4)){
-    let shoe = arrSP[i];
+  let html = "";
+  let carouselArr = randomItem(arrSP,3)
+  for (let i in carouselArr){
+    let shoe = carouselArr[i];
     let {id,image,name,shortDescription} = shoe;
     html += `
     <div class="slick-item">
@@ -88,6 +90,20 @@ function renderCarouselShoe(arrSP,idBody){
     `
   }
   document.getElementById(idBody).innerHTML = html;
+}
+//Random Item from Api
+function randomItem(arr,nlength){
+  let newArr = [];
+    for (let i = 0; i < arr.length; i++){
+        let k = Math.floor(Math.random()*arr.length)
+            if (!newArr.includes(arr[k]) && newArr.length < nlength) {
+                newArr.push(arr[k]);
+            }
+            if (newArr.length == length) {
+                break;
+            }
+    }
+    return newArr;
 }
 //------------------------------------------------
 window.onload = () => {

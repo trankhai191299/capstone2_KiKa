@@ -1,7 +1,7 @@
 window.onload = function () {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get("getbyid");
-  console.log("params", myParam);
+  //   console.log("params", myParam);
   //call api load lên giao diện
   getDetail(myParam);
 };
@@ -24,12 +24,12 @@ function getDetail(id) {
 //render detail len giao dien
 function renderDetail(arrSP, idBody) {
   let { name, price, id, size, image, description } = arrSP;
-// muon map ra so size nhung ko lam duoc danh phai su dung cach dot
-//   let renderSize = size.map(
-//     (index) => `<button class="me-2 ps-1 pe-1">${index}</button>`
-//   );
-//   let sizes = JSON.stringify(renderSize)
-//   console.log(sizes);
+  // muon map ra so size nhung ko lam duoc danh phai su dung cach dot
+  //   let renderSize = size.map(
+  //     (index) => `<button class="me-2 ps-1 pe-1">${index}</button>`
+  //   );
+  //   let sizes = JSON.stringify(renderSize)
+  //   console.log(sizes);
   let html = `
     <div class="row" id="${id}">
           <div class="col-4 ps-5 pt-5">

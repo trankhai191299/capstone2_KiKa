@@ -13,16 +13,16 @@ function getFeatureShoe() {
     })
 }
 //Get carousel shoe
-function getCarouselShoe(){
+async function getCarouselShoe(){
   let promise = axios({
     url:'https://shop.cyberlearn.vn/api/Product',
         method: 'GET',
   })
-  promise.then((result)=>{
+  await promise.then((result)=>{
     // console.log(result.data)
     renderCarouselShoe(result.data.content,"carousel-content");
 })
-promise.catch((e)=>{
+  await promise.catch((e)=>{
     console.log(e)
 })
 }

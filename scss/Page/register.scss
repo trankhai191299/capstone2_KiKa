@@ -35,10 +35,10 @@
         }
         .form-check{
             .form-check-input{
-                width: 65px;
-                height: 50px;
-                border: none;
-                transform: translate(-15px,-10px);
+                // width: 65px;
+                // height: 50px;
+                // border: none;
+                // transform: translate(-15px,-10px);
                 background-color: $fr-cl-check1;
                 &:focus{
                     box-shadow: none;
@@ -47,9 +47,9 @@
                   background-image: url("/img/purple-dot.png");
                 }
             }
-            .form-check-label{
-                @include text($text-l, $text-medium, $text-cl-prim);
-            }
+            // .form-check-label{
+            //     @include text($text-l, $text-medium, $text-cl-prim);
+            // }
         }
       }
     }

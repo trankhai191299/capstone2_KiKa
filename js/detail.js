@@ -31,12 +31,12 @@ function renderDetail(arrSP, idBody) {
   //   let sizes = JSON.stringify(renderSize)
   //   console.log(sizes);
   let html = `
-    <div class="row" id="${id}">
-          <div class="col-lg-4 col-md-12  pt-5">
-            <img class="bg-light w-100" src=${image} alt="" />
+    <div class="row justify-content-around mt-2" id="${id}">
+          <div class="col-lg-4 col-md-12 mt-5">
+            <img class="bg-light w-100 border border-secondary border-2 rounded-3" src=${image} alt="" />
           </div>
-          <div class="col-lg-6 col-md-12 p-5">
-            <h3>${name}</h3>
+          <div class="col-lg-6 col-md-12 mt-5">
+            <h1>${name}</h1>
             <p>${description}</p>
             <span style="display: block" class="mb-2 text-success fw-bold"
               >Available size</span

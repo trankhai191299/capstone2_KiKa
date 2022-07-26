@@ -103,31 +103,31 @@ a {
 .product-feature .row {
   margin-top: 50px;
 }
-.product-feature .row .col-4 .card {
+.product-feature .row .relate-main-part .card {
   background-color: #F8F8F8;
 }
-.product-feature .row .col-4 .card .card-top {
+.product-feature .row .relate-main-part .card .card-top {
   padding: 20px;
 }
-.product-feature .row .col-4 .card .card-body {
+.product-feature .row .relate-main-part .card .card-body {
   padding: 20px;
 }
-.product-feature .row .col-4 .card .card-body .card-title {
+.product-feature .row .relate-main-part .card .card-body .card-title {
   height: 60px;
   font-size: 24px;
   font-weight: 400;
   color: #000;
 }
-.product-feature .row .col-4 .card .card-body .card-text {
+.product-feature .row .relate-main-part .card .card-body .card-text {
   font-size: 20px;
   font-weight: 300;
   color: #CBC9C9;
 }
-.product-feature .row .col-4 .card .card-footer {
+.product-feature .row .relate-main-part .card .card-footer {
   padding: 0;
   background-color: #DEDDDC;
 }
-.product-feature .row .col-4 .card .card-footer .btnBuy {
+.product-feature .row .relate-main-part .card .card-footer .btnBuy {
   transition: all 0.5s;
   background: #E1B067;
   padding: 15px 25px;
@@ -136,11 +136,11 @@ a {
   font-weight: 300;
   color: #fff;
 }
-.product-feature .row .col-4 .card .card-footer .btnBuy:hover {
+.product-feature .row .relate-main-part .card .card-footer .btnBuy:hover {
   background: #fff;
   color: #000;
 }
-.product-feature .row .col-4 .card .card-footer .price {
+.product-feature .row .relate-main-part .card .card-footer .price {
   font-size: 24px;
   font-weight: 700;
   color: #000;

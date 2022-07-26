@@ -91,7 +91,7 @@ function renderRelateProduct(arrRelatedProducts, idBody) {
     let shoe = arrRelatedProducts[i];
     let { id, name, price, shortDescription, image } = shoe;
     html += `
-        <div class="col-lg-4 col-sm-6 col-12">
+        <div class="col-lg-4 col-sm-6 col-12 relate-main-part">
         <div class="card text-start m-3">
           <div class="card-top">
             <img

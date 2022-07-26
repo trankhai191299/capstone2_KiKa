@@ -62,31 +62,31 @@ a {
   opacity: 1;
 }
 
-.footer .line .row .col-4 .title h4 {
+.footer .line .row .col-md-4.col-6 .title h4 {
   font-size: 24px;
   font-weight: 700;
   color: #000;
 }
-.footer .line .row .col-4 .info a,
-.footer .line .row .col-4 .info p {
+.footer .line .row .col-md-4.col-6 .info a,
+.footer .line .row .col-md-4.col-6 .info p {
   font-size: 16px;
   font-weight: 300;
   color: #000;
 }
-.footer .line .row .col-4 .info a {
+.footer .line .row .col-md-4.col-6 .info a {
   transition: all 0.5s;
 }
-.footer .line .row .col-4 .info a:hover {
+.footer .line .row .col-md-4.col-6 .info a:hover {
   font-size: 16px;
   font-weight: 300;
   color: #ff0000;
 }
-.footer .line .row .col-4 .info a.other-link {
+.footer .line .row .col-md-4.col-6 .info a.other-link {
   font-size: 16px;
   font-weight: 300;
   color: #de8b87;
 }
-.footer .line .row .col-4 .info a.other-link:hover {
+.footer .line .row .col-md-4.col-6 .info a.other-link:hover {
   font-size: 16px;
   font-weight: 300;
   color: #ff0000;

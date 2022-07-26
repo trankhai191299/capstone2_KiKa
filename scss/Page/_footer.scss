@@ -1,7 +1,7 @@
 .footer {
     .line {
       .row {
-        .col-4 {
+        .col-md-4.col-6 {
           .title {
             h4 {
               @include text($text-md, $text-bold, $text-cl-prim);

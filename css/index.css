@@ -166,6 +166,11 @@ a {
 .product-feature .row .product-main-part .card .card-top img {
   height: 250px;
 }
+@media screen and (max-width: 770px) {
+  .product-feature .row .product-main-part .card .card-top img {
+    height: auto;
+  }
+}
 .product-feature .row .product-main-part .card .card-body {
   padding: 20px;
 }

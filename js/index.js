@@ -70,13 +70,13 @@ function renderCarouselShoe(arrSP,idBody){
     let {id,image,name,shortDescription} = shoe;
     html += `
     <div class="slick-item">
-    <div class="row align-items-center">
-      <div class="col-8">
+    <div class="row align-items-center justify-contents-between">
+      <div class="col-lg-8 col-12">
         <div class="carousel-left">
-          <img src=${image} alt="..." height="auto" />
+          <img src=${image} alt="..."/>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-12">
         <div class="carousel-right">
           <div class="shoe-info">
             <h3 class="shoe-name">${name}</h3>

@@ -106,6 +106,19 @@ a {
   padding-top: 25px;
   height: 600px;
 }
+@media screen and (max-width: 992px) {
+  .carousel {
+    height: 750px;
+  }
+}
+.carousel .carousel-content .slick-item .carousel-left img {
+  height: 450px;
+}
+@media screen and (max-width: 992px) {
+  .carousel .carousel-content .slick-item .carousel-left img {
+    height: 400px;
+  }
+}
 .carousel .carousel-content .slick-item .carousel-right .shoe-info .shoe-name {
   font-size: 40px;
   font-weight: 300;
@@ -118,6 +131,8 @@ a {
 }
 .carousel .carousel-content .slick-item .carousel-right .shoe-info a.btnBuy {
   transition: all 0.5s;
+  display: inline-block;
+  margin-top: 15px;
   background: #E1B067;
   padding: 15px 25px;
   border: none;

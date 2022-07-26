@@ -67,6 +67,9 @@
           padding: 20px;
           img{
             height: 250px;
+            @media screen and (max-width:770px){
+              height: auto;
+            }
           }
         }
         .card-body {

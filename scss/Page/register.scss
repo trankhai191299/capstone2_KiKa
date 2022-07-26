@@ -47,17 +47,19 @@
                   background-image: url("/img/purple-dot.png");
                 }
             }
-            // .form-check-label{
-            //     @include text($text-l, $text-medium, $text-cl-prim);
-            // }
+            .form-check-label{
+                @include text($text-l, $text-medium, $text-cl-prim);
+                padding-bottom: 15px;
+            }
         }
       }
     }
     button {
       transition: all 0.5s;
       margin-top: 25px;
-      position: absolute;
-      left: 51.5%;
+      margin-left: 10px;
+      // position: absolute;
+      // left: 51.5%;
       @include button(
         $btn-cl-4,
         5px 60px,

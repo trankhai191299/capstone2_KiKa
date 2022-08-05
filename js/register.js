@@ -10,10 +10,15 @@ document.querySelector("#btnSubmit").onclick = function(e){
         let {id,value} = input
         user[id] = value
         user["gender"] = genderValue
+        if(user[id].trim() === ""){
+            return alert("Không được để các ô nhập trống")
+        }
     }
+    
     if(user["password"]!==user["passwordConfirm"]){
         return alert("Sai mật khẩu!")
     }
+    
     let promise = axios({
         url:"https://shop.cyberlearn.vn/api/Users/signup",
         method:"POST",
@@ -27,3 +32,5 @@ document.querySelector("#btnSubmit").onclick = function(e){
         console.log(e)
     })
 }
+//Validation
+
